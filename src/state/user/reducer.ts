@@ -34,12 +34,6 @@ function reducer(state = initialState, action: AnyAction) {
         loginRequestStatus: constants.REQUEST.STATUS.FAILURE,
       };
     }
-    case actions.RESET_LOGIN_STATUS: {
-      return {
-        ...state,
-        loginRequestStatus: '',
-      }
-    }
     default:
       return state;
   }

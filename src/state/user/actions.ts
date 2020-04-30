@@ -3,7 +3,6 @@ import { AnyAction } from 'redux';
 const LOGIN = 'LOGIN';
 const LOGIN_SUCCESS = 'LOGIN_SUCCESS';
 const LOGIN_FAILURE = 'LOGIN_FAILURE';
-const RESET_LOGIN_STATUS = 'RESET_LOGIN_STATUS';
 
 const loginAction = ({ email, password }: { email?: string, password?: string }) => ({
   type: LOGIN,
@@ -46,20 +45,13 @@ interface LogiFailureAction extends AnyAction {
   };
 }
 
-
-const resetLoginStatusAction = () => ({
-  type: RESET_LOGIN_STATUS,
-});
-
 export type UserActionTypes = LoginAction | LoginSuccessAction | LogiFailureAction;
 
 export default {
   LOGIN,
   LOGIN_SUCCESS,
   LOGIN_FAILURE,
-  RESET_LOGIN_STATUS,
   loginAction,
   loginSuccessAction,
   loginFailureAction,
-  resetLoginStatusAction,
 };
