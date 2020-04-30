@@ -46,11 +46,6 @@ interface LogiFailureAction extends AnyAction {
   };
 }
 
-
-const resetLoginStatusAction = () => ({
-  type: RESET_LOGIN_STATUS,
-});
-
 export type UserActionTypes = LoginAction | LoginSuccessAction | LogiFailureAction;
 
 export default {
@@ -61,5 +56,4 @@ export default {
   loginAction,
   loginSuccessAction,
   loginFailureAction,
-  resetLoginStatusAction,
 };
