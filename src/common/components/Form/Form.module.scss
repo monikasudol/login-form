@@ -7,10 +7,11 @@
   padding: $metric-l $metric-m;
   border: 1px solid $color-gray;
   width: 100%;
-  max-width: 300px;
+  max-width: 350px;
   margin: 0 $metric-s;
   .form {
     display: flex;
     flex-direction: column;
+    text-align: center;
   }
 }
